@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="item"
+            type="tech.plateau.gankio.retrofit.CategoryResponse" />
+        <variable
+            name="presenter"
+            type="tech.plateau.gankio.CategoryFragment.Presenter" />
+        <import type="tech.plateau.gankio.CategoryFragment.Util" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/four_radius_white"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:leftMargin="@{Util.getLeftMargin(item)}"
+        app:rightMargin="@{Util.getRightMargin(item)}"
+        android:elevation="3dp"
+        android:onClick="@{()->presenter.onClickPhoto(item)}"
+        android:foreground="?attr/selectableItemBackground">
+
+        <tech.plateau.gankio.SquareImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:imageResourceUrl="@{item.url}"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:11-53
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+		ADDED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+		ADDED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+application
+ADDED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml:3:5-19
+uses-sdk
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+		ADDED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+		ADDED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml
+		INJECTED from /Users/sakura/Downloads/GankIO/adapter/src/main/AndroidManifest.xml

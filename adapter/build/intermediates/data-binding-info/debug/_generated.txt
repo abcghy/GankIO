@@ -1,0 +1,2 @@
+com.github.markzhai.recyclerview.databinding.ItemSingleTypeBinding
+android.databinding.DataBindingComponent

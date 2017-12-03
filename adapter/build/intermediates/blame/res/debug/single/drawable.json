@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/sakura/Downloads/GankIO/adapter/build/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/sakura/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/188d395d7812f5b615c7c12e59d8b01b/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/sakura/Downloads/GankIO/adapter/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/sakura/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/188d395d7812f5b615c7c12e59d8b01b/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/sakura/Downloads/GankIO/adapter/build/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/sakura/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/188d395d7812f5b615c7c12e59d8b01b/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/sakura/Downloads/GankIO/adapter/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/sakura/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/188d395d7812f5b615c7c12e59d8b01b/res/drawable/notification_tile_bg.xml"
+    }
+]
