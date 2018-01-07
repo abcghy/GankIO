@@ -1,4 +1,4 @@
-package tech.plateau.gankio
+package tech.plateau.gankio.widget
 
 import android.content.Context
 import android.util.AttributeSet

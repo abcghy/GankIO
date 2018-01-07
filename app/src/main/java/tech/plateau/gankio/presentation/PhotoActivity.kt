@@ -1,9 +1,10 @@
-package tech.plateau.gankio
+package tech.plateau.gankio.presentation
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import tech.plateau.gankio.R
 import tech.plateau.gankio.databinding.ActivityPhotoBinding
 
 /**

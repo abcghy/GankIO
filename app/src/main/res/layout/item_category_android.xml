@@ -10,7 +10,7 @@
         <import type="tech.plateau.gankio.presentation.ImageCateFragment" />
     </data>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,15 +20,27 @@
         app:leftMargin="@{Util.getLeftMargin(item)}"
         app:rightMargin="@{Util.getRightMargin(item)}"
         android:elevation="3dp"
-        android:id="@+id/ll_image"
+        android:id="@+id/ll_android"
+        android:onClick="@{()->presenter.onClickArticle(item)}"
         android:foreground="?attr/selectableItemBackground">
 
         <tech.plateau.gankio.widget.SquareImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:imageResourceUrl="@{item.url}"
+            app:imageResourceUrl="@{Util.getImage(item)}"
             app:imageRadius="@{4}"
             android:transitionName="@string/shared_image"/>
 
-    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{item.desc}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp"
+            android:maxLines="4"
+            android:background="@drawable/text_mask_bg"/>
+
+    </RelativeLayout>
 </layout>

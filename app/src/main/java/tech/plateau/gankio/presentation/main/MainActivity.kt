@@ -1,19 +1,21 @@
-package tech.plateau.gankio
+package tech.plateau.gankio.presentation.main
 
 import android.databinding.DataBindingUtil
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import tech.plateau.gankio.R
 import tech.plateau.gankio.databinding.ActivityMainBinding
+import tech.plateau.gankio.presentation.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     var mBinding: ActivityMainBinding? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun initComponent() {
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+    }
 
+    override fun createHandler() {
         mBinding?.bnv?.setOnNavigationItemSelectedListener { listener ->
             when (listener.itemId) {
                 R.id.nav_all -> Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
@@ -26,20 +28,10 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+    }
 
-//        val date = DateTime.now().withDate(2017, 10, 20)
-//        HttpMethods.gank().getDataByDay(date.year, date.monthOfYear, date.dayOfMonth)
-//                .subscribeOn(Schedulers.io())
-//                .observeOn(AndroidSchedulers.mainThread())
-//                .subscribe(object : HttpSubscriber<Void>() {
-//                    override fun onSuccess(response: Response<Void>) {
-//
-//                    }
-//
-//                    override fun onFailure(errMsg: String?, response: Response<Void>?) {
-//
-//                    }
-//                })
+    override fun loadData(savedInstanceState: Bundle?) {
+
     }
 
 }

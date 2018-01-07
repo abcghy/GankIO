@@ -5,8 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
-import tech.plateau.gankio.dp2px
+import tech.plateau.gankio.util.dp2px
 
 /**
  * Created by sakura on 2017/12/3.
@@ -22,9 +23,14 @@ object AppBindingAdapter {
     }
 
     @JvmStatic
-    @BindingAdapter("imageResourceUrl")
-    fun setSrc(imageView: ImageView, imageUrl: Any) {
+    @BindingAdapter("imageResourceUrl", "imageRadius", requireAll = false)
+    fun setSrc(imageView: ImageView, imageUrl: Any?, imageRadius: Int?) {
         var options = RequestOptions().centerCrop()
+
+        if (imageRadius != null) {
+            options.transform(RoundedCorners(imageRadius))
+        }
+
         Glide.with(imageView.context)
                 .load(imageUrl)
                 .apply(options)
